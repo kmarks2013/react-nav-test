@@ -5,12 +5,14 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <View>
-                <Text> Welcome to your App! </Text>
+                <Text style={styles.homeFont}> Welcome to your App! </Text>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    
+    homeFont: {
+        fontSize: 45
+    }
 })
