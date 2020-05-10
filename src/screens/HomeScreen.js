@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Button, View, StyleSheet } from 'react-native'
 
 export default class HomeScreen extends Component {
     render() {
         return (
             <View>
-                <Text style={styles.homeFont}> Welcome to your App! </Text>
+                <Button title="Go to the first screen" onPress={() => this.props.navigation.navigate("First")}/>
+                <Button title="Go to the second screen" onPress={() => this.props.navigation.navigate("Second")}/>
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    homeFont: {
-        fontSize: 45
-    }
 })
