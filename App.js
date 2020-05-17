@@ -3,13 +3,15 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen'
 import FirstScreen from './src/screens/FirstScreen';
 import SecondScreen from './src/screens/SecondScreen';
+import FormExample from './src/screens/FormExample';
 
 const navigator = createStackNavigator({
   Home: HomeScreen,
   First: FirstScreen,
-  Second: SecondScreen
+  Second: SecondScreen,
+  Form: FormExample
 }, {
-  initialRouteName: "Home",
+  initialRouteName: "Form",
   defaultNavigationOptions: {
     title: "YOUR APP NAME"
   }
